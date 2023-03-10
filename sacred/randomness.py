@@ -33,4 +33,5 @@ def set_global_seed(seed):
         opt.np.random.seed(seed)
     if module_is_in_cache('tensorflow'):
         import tensorflow as tf
-        tf.set_random_seed(seed)
+        # tf.set_random_seed(seed)
+        tf.random.set_seed(seed)
